@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela' !important;
+}
+
+h3 {
+  font-family: 'Lato' !important;
+}
+
+.pStyle {
+  font-family: 'Lato' !important;
+}
+
+.meetPartners {
+  background: url(http://wplms.io/demos/demo6/wp-content/uploads/2017/12/slider1-1024x629.jpg);
+  position:relative;
+  background-size: cover;
+  min-height:500px;
+}
