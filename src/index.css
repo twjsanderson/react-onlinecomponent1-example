@@ -33,6 +33,35 @@ h3 {
   min-height: 700px;
 }
 
+@media screen and (min-width: 992px) {
+  /* start of screens > 992 (large tablets & computers) */
+  .img-responsive {
+    max-width: 130%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* from medium to large tablet screens */
+  .img-responsive {
+    max-width: 130%;
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* from small screens to medium tablet screens */
+  .img-responsive {
+    max-width: 110.5%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* from mobile to small tablet screens */
+  .img-responsive {
+    max-width: 50%;
+  }
+}
+
 .page-section {
   background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('./images/bg.jpg');
   background-attachment: fixed;
@@ -99,3 +128,43 @@ p {
   }
 }
 
+.revol-bg {
+  background-image: url('//cdn.shopify.com/s/files/1/1958/2177/files/Revols_Black_copy_2048x2048_9002b501-84b9-41e1-9600-0be30b2d5ea0_1024x1024.jpg?v=1517018623');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rev-logo-margin {
+  margin-left: 25%;
+}
+
+.rev-links-margin {
+  margin-left: 50%;
+}
+
+@media (max-width: 991px) {
+  .rev-logo-margin {
+    margin-left: 2.5%;
+  }
+  
+  .rev-links-margin {
+    margin-left: 80%;
+    text-align: right;
+  }
+}
+
+
+.rev-title {
+  font-size: 2em;
+  font-family: 'Lato';
+  margin-bottom: 20px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-weight: 1000;
+}
+
+.rev-tagline {
+  font-family: 'gothamregular';
+}

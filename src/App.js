@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col, Container, Nav, Navbar } from 'react-bootstrap';
 import image3 from './images/image3.jpg';
 import intro from './images/intro.jpg';
 
@@ -71,7 +71,10 @@ class App extends Component {
                 <h2 className="mb-4">
                   Professional Dancing Instruction
                 </h2>
-                <p className="mb-3">Learn modern and classic dancing from the best instructors in North America. With over 40 years of experience, our expert staff will turn you into incredible dancers - we guarantee it!
+                <p className="mb-3">
+                  Learn modern and classic dancing from the best instructors in North America. 
+                  With over 40 years of experience, our expert staff will turn you into 
+                  incredible dancers - we guarantee it!
                 </p>
                 <div className="mx-auto">
                   <a className="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
@@ -79,7 +82,7 @@ class App extends Component {
               </Col>
               <Col md={6} style={{ marginLeft: "-10%", opacity: "0.9" }}>
                 <img 
-                  className="image-fluid my-5 rounded" 
+                  className="img-responsive my-5 rounded" 
                   src={image3} 
                   alt="pic" 
                 />
@@ -87,26 +90,63 @@ class App extends Component {
             </Row>
           </Container>
           {/* New Component */}
-            <section class="page-section clearfix p-4">
-              <div class="container">
-                <div class="intro">
-                  <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src={intro} alt="" />
-                  <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                    <h2 class="section-heading mb-4">
-                      <span class="section-heading-upper">Fresh Coffee</span>
-                      <span class="section-heading-lower">Worth Drinking</span>
+            <section className="page-section clearfix p-4">
+              <Container>
+                <div className="intro">
+                  <img 
+                    className="intro-img img-fluid mb-3 mb-lg-0 rounded" 
+                    src={intro} 
+                    alt="barrista" 
+                  />
+                  <div className="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 className="section-heading mb-4">
+                      <span className="section-heading-upper">Fresh Coffee</span>
+                      <span className="section-heading-lower">Worth Drinking</span>
                     </h2>
-                    <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
+                    <p className="mb-3">
+                      Every cup of our quality artisan coffee starts with locally sourced, hand picked 
+                      ingredients. Once you try it, our coffee will be a blissful addition to your 
+                      everyday morning routine - we guarantee it!
                     </p>
-                    <div class="intro-button mx-auto">
-                      <a class="btn btn-primary p-4 button-primary btn-xl" href="#">Visit Us Today!</a>
+                    <div className="intro-button mx-auto">
+                      <a className="btn btn-primary p-4 button-primary btn-xl" href="#">Visit Us Today!</a>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Container>
             </section>
-            {/* New Section */}
-            <Container fluid className="bg-primary" style={{ height: 700 }}>
+            {/* New Component */}
+            <Container fluid className="revol-bg" style={{ height: 800 }}>
+                <Navbar collapseOnSelect expand="lg">
+                    <Navbar.Brand className="rev-logo-margin" href="#home"> 
+                      <img
+                        src='//cdn.shopify.com/s/files/1/1958/2177/files/revols_logo_white_90x.png?v=1517017786'
+                        alt='earbuds'
+                      />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                      <Nav className="rev-links-margin">
+                        <Nav.Link className="px-3 text-white" href="#home">HOME</Nav.Link>
+                        <Nav.Link className="px-3 text-white" href="#features">FEATURES</Nav.Link>
+                        <Nav.Link className="px-3 text-white" href="#xccessories">ACCESSORIES</Nav.Link>
+                      </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+                <Container className="d-flex h-100">
+                  <Row className="h-100 align-items-center">
+                    <Col md={12} className="text-center">
+                      <h1 className="text-white rev-title">
+                        CUSTOM-FIT WIRELESS EARPHONES
+                      </h1>
+                      <h3 className="text-white rev-tagline">
+                        Perfect Fit. Ultimate Comfort. Premium Sound.
+                      </h3>
+                    </Col>
+                  </Row>
+                  
+                </Container>
+              
             </Container>
       </Fragment>
     );
