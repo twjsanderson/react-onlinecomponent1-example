@@ -154,17 +154,80 @@ p {
   }
 }
 
-
+/* text shadow is super powerful for making text look highlighted */
 .rev-title {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: 'Lato';
   margin-bottom: 20px;
   line-height: 1.25;
   letter-spacing: 0;
   text-transform: uppercase;
-  font-weight: 1000;
+  font-weight: 900;
+  text-shadow: 0 1px 1px white;
 }
 
 .rev-tagline {
+  font-size: 2em;
   font-family: 'gothamregular';
 }
+
+.rev-blue {
+  color: #37b3f6 !important;
+}
+
+.margin {
+  margin-top: 15%;
+}
+
+.jam-container {
+  background: linear-gradient(135deg, yellow 2%, white 25%, yellow);
+}
+
+
+.jam-learn {
+  color: grey;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.jam-learn:hover {
+  font-size: 1.2rem;
+  color: black;
+  cursor: pointer;
+}
+
+
+.jam-work {
+  font-size: 3rem;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration 1s ease-in-out;
+}
+
+.jam-work:hover {
+  color: black;
+  text-decoration-color: rgb(255, 255, 1);
+  cursor: pointer;
+}
+
+.jam-client {
+  color: grey;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.jam-client:hover {
+  font-size: 1.2rem;
+  color: black;
+  cursor: pointer;
+}
+
+.jam-arrow {
+  width: 7%;
+  transition: width 0.5s ease-in-out;
+}
+
+.jam-arrow:hover {
+  width: 10%;
+  cursor: pointer;
+}
+

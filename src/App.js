@@ -2,12 +2,18 @@ import React, { Component, Fragment } from 'react';
 import { Row, Col, Container, Nav, Navbar } from 'react-bootstrap';
 import image3 from './images/image3.jpg';
 import intro from './images/intro.jpg';
+import bike from './images/bicycle.png';
+import arrow from './images/arrow.png';
 
 class App extends Component {
+  alert = () => {
+    console.log('clicked')
+  }
+  
   render() {
     return (
       <Fragment>
-        {/* New Component */}
+        {/* New Component 1 */}
           <Row style={{ marginRight: "0px", backgroundColor: "#14272E", color: "#ffffff"}}>
             <Col sm={6}>
               <img
@@ -37,7 +43,7 @@ class App extends Component {
               </Row>
             </Col>
           </Row>
-          {/* New Component */}
+          {/* New Component 2 */}
           <Container fluid className="meetPartners" style={{ marginRight: "0px", color: "#ffffff" }}>
             <Row>
               <Col style={{ marginTop: "80px" }} className="text-center">
@@ -64,7 +70,7 @@ class App extends Component {
               </Col>
             </Row>
           </Container>
-          {/* New component */}
+          {/* New component 3 */}
           <Container fluid className="home-section">
             <Row className="h-100 align-items-center">
               <Col md={4} style={{ backgroundColor: "lightGrey", zIndex: "2", opacity: "0.9" }} className="text-center p-5 m-5 rounded" height={300}>
@@ -89,7 +95,7 @@ class App extends Component {
               </Col>
             </Row>
           </Container>
-          {/* New Component */}
+          {/* New Component 4 */}
             <section className="page-section clearfix p-4">
               <Container>
                 <div className="intro">
@@ -115,7 +121,7 @@ class App extends Component {
                 </div>
               </Container>
             </section>
-            {/* New Component */}
+            {/* New Component 5 */}
             <Container fluid className="revol-bg" style={{ height: 800 }}>
                 <Navbar collapseOnSelect expand="lg">
                     <Navbar.Brand className="rev-logo-margin" href="#home"> 
@@ -133,20 +139,60 @@ class App extends Component {
                       </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-                <Container className="d-flex h-100">
-                  <Row className="h-100 align-items-center">
-                    <Col md={12} className="text-center">
+                <Container className="h-75">
+                  <Row className="h-100 justify-content-center align-items-start margin">
+                    <Col className="text-center">
                       <h1 className="text-white rev-title">
                         CUSTOM-FIT WIRELESS EARPHONES
                       </h1>
                       <h3 className="text-white rev-tagline">
-                        Perfect Fit. Ultimate Comfort. Premium Sound.
+                        Perfect <span className="rev-blue">Fit</span>. Ultimate <span className="rev-blue">Comfort</span>. Premium <span className="rev-blue">Sound</span>.
                       </h3>
                     </Col>
                   </Row>
-                  
                 </Container>
-              
+            </Container>
+            {/* New Component 5 */}
+            <Container className="jam-container" fluid style={{ height: 800 }}>
+              <Navbar className="offset-md-4" collapseOnSelect expand="lg">
+                  <Navbar.Brand className="" href="#home"> 
+                    <h3>JamStore.</h3>
+                  </Navbar.Brand>
+                  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                  <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="">
+                      <Nav.Link className="" href="#services">Services</Nav.Link>
+                      <Nav.Link className="" href="#clients">Clients</Nav.Link>
+                      <Nav.Link className="" href="#careers">Careers</Nav.Link>
+                      <Nav.Link className="" href="#about">About</Nav.Link>
+                    </Nav>
+                  </Navbar.Collapse>
+              </Navbar>
+              <Container fluid className="h-50">
+                <Row className="h-50 align-items-center">
+                  <Col className="text-center" md={6}>
+                    <div width={20}>
+                    <p className="jam-learn p-2">Learn More</p>
+                    </div>
+                    <p className="jam-work p-2">Work <br /> With Us</p>
+                    <p className="jam-client p-2">Featured Projects</p>
+                    <hr />
+                    <img
+                      className="jam-arrow" 
+                      src={arrow}
+                      alt="arrow"
+                    />
+                  </Col>
+                  <Col md={6}>
+                    <img
+                      className="pr-5" 
+                      src={bike}
+                      width='100%'
+                      alt='bike'
+                    />
+                  </Col>
+                </Row>
+              </Container>
             </Container>
       </Fragment>
     );
