@@ -160,11 +160,11 @@ class App extends Component {
                   </Navbar.Brand>
                   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                   <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="">
-                      <Nav.Link className="" href="#services">Services</Nav.Link>
-                      <Nav.Link className="" href="#clients">Clients</Nav.Link>
-                      <Nav.Link className="" href="#careers">Careers</Nav.Link>
-                      <Nav.Link className="" href="#about">About</Nav.Link>
+                    <Nav>
+                      <Nav.Link href="#services">Services</Nav.Link>
+                      <Nav.Link href="#clients">Clients</Nav.Link>
+                      <Nav.Link href="#careers">Careers</Nav.Link>
+                      <Nav.Link href="#about">About</Nav.Link>
                     </Nav>
                   </Navbar.Collapse>
               </Navbar>
@@ -194,6 +194,8 @@ class App extends Component {
                 </Row>
               </Container>
             </Container>
+            {/* New Component 6 */}
+
       </Fragment>
     );
   }
